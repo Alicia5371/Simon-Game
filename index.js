@@ -1,6 +1,22 @@
+//Example/Testing
+//$("#test").css("background-color", "pink");
+
 let buttonColors = ["red", "blue", "green", "yellow"];
 
 let gamePattern = [];
+
+let userClickedPattern = [];
+
+function animatePress(currentColor = "green") {
+  $("#" + currentColor).addClass("pressed");
+}
+
+$(".btn").click(function (e) {
+  e.preventDefault();
+  let userChosenColour = $(this).attr("id");
+  userClickedPattern.push(userChosenColour);
+  animatePress(userChosenColour);
+});
 
 function nextSequence() {
   let randomNumber = Math.floor(Math.random() * 4);
@@ -35,6 +51,3 @@ $(".blue").click(function (e) {
   let audio = new Audio("sounds/blue.mp3");
   audio.play();
 });
-
-let userChosenColor = jq;
-$("selector").text();

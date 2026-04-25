@@ -40,3 +40,12 @@ h1 {
 #blue {
   background-color: blue;
 }
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: pink;
+}
+
+.example {
+  background-color: blueviolet;
+}
