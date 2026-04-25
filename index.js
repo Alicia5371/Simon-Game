@@ -35,3 +35,6 @@ $(".blue").click(function (e) {
   let audio = new Audio("sounds/blue.mp3");
   audio.play();
 });
+
+let userChosenColor = jq;
+$("selector").text();
